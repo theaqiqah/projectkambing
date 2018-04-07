@@ -18,3 +18,17 @@ Route::get('/', function () {
 Route::get('/landing', function () {
     return view('welcome');
 });
+
+Route::get('/old', function () {
+    return view('landingOld');
+});
+
+Route::get('faq', function () {
+    return view('faq');
+});
+
+Route::get('book/livestock', 'BookingController@showBookLivestock');
+
+Route::get('book/aqiqah', 'BookingController@showBookAqiqah');
+
+Route::get('book/livegrill', 'BookingController@showBookLivegrill');
